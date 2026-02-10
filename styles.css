@@ -1,0 +1,44 @@
+body {
+    background: #23cfc9;
+    background: linear-gradient(90deg, rgba(35, 207, 201, 1) 0%, rgba(87, 169, 199, 1) 50%, rgba(83, 119, 237, 1) 100%);    
+}
+
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.container-center {
+    min-height: 80vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.button-style {
+    padding: 20px 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color:bisque;
+    border-radius: 50px;
+}
+
+.send-button {
+    padding: 20px 60px;
+    border-radius: 30px;
+}
+
+.imagen-tam {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+.background-dash {
+    background-color: beige;
+    
+}
