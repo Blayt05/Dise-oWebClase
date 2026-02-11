@@ -1,17 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background: #23cfc9;
     background: linear-gradient(90deg, rgba(35, 207, 201, 1) 0%, rgba(87, 169, 199, 1) 50%, rgba(83, 119, 237, 1) 100%);    
 }
 
-
 .titulo {
+    padding-top: 50px;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+}
 
+@media (min-width: 768px) {
+    .titulo {
+        padding-top: 200px;
+        text-align: center;
+        font-size: 40px;
+    }
 }
 
 .container-center {
-    min-height: 80vh;   
+    min-height: 60vh;   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,8 +37,16 @@ body {
     padding: 20px 40px;
     font-size: 15px;
     text-align: center;
-    background-color:bisque;
     border-radius: 50px;
+    box-shadow: #333;
+}
+
+.button-input {
+    padding: 20px 40px;
+    font-size: 15px;
+    text-align: center;
+    background-color:bisque;
+    
 }
 
 .send-button {
@@ -35,10 +57,97 @@ body {
 .imagen-tam {
     width: 100px;
     height: 100px;
-    padding-bottom: 10px;
+    border-radius: 20px;
 }
 
-.background-dash {
-    background-color: beige;
-    
+
+
+
+.container-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+
+
+@media (min-width: 768px) {
+    .container-tarjetas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 100px 15px;
+        border-radius: 50px;
+    }
+}
+
+
+.navbar {
+    background-color: #333;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.tarjeta { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:bisque;
+    gap: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.colocar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.text {
+     padding: 30px;            
 }
