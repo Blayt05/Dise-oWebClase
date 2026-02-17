@@ -9,15 +9,93 @@
 
 </head>
 <body>
-    <nav class="navbar">
-        <div class="topnav" id="myTopnav">
-            <a href="/dashboard.html">Katban</a>
-            <a href="/proyectos.html">Proyectos</a>
-            <a class="active" href="/tareas.html">Tareas</a>
-            <a href="/supervisando.html">Supervisando</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="topnav" id="myTopnav">
+                <a href="/proyectos.html">Inicio</a>
+                <a href="/dashboard.html">Dashboard</a>
+                <a class="active" href="/tareas.html">Tareas</a>
+                <a href="/contacto.html">Contacto</a>
+
+            </div>
+        </nav>
+    </header>
+    
     <div class="background-dash"></div>
-    <h1>En desarrollo...</h1>
+    <main>
+        <section class="tareas-section">
+            <h2 class="tareas-titulo">Mis Tareas</h2>
+            
+            <div class="tareas-container">
+                <!-- Tarjeta de tarea -->
+                <div class="tarea-card">
+                    <div class="tarea-header">
+                        <span class="tarea-prioridad alta">Alta</span>
+                        <span class="tarea-fecha">16 Feb</span>
+                    </div>
+                    <h3 class="tarea-titulo-card">Proyecto Final</h3>
+                    <p class="tarea-descripcion">Completar el diseño web y entregarlo antes del viernes.</p>
+                    <div class="tarea-footer">
+                        <span class="tarea-categoria">Diseño</span>
+                        <button class="tarea-btn">✓</button>
+                    </div>
+                </div>
+
+                <div class="tarea-card">
+                    <div class="tarea-header">
+                        <span class="tarea-prioridad media">Media</span>
+                        <span class="tarea-fecha">18 Feb</span>
+                    </div>
+                    <h3 class="tarea-titulo-card">Estudiar JavaScript</h3>
+                    <p class="tarea-descripcion">Repasar funciones y objetos para el examen.</p>
+                    <div class="tarea-footer">
+                        <span class="tarea-categoria">Estudio</span>
+                        <button class="tarea-btn">✓</button>
+                    </div>
+                </div>
+
+                <div class="tarea-card">
+                    <div class="tarea-header">
+                        <span class="tarea-prioridad baja">Baja</span>
+                        <span class="tarea-fecha">20 Feb</span>
+                    </div>
+                    <h3 class="tarea-titulo-card">Actualizar Portfolio</h3>
+                    <p class="tarea-descripcion">Agregar los nuevos proyectos realizados.</p>
+                    <div class="tarea-footer">
+                        <span class="tarea-categoria">Personal</span>
+                        <button class="tarea-btn">✓</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Acerca de</h3>
+                <p>Herramienta creada para la facilitacion en la gestion de tareas en equipos de trabajo en proyectos</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rapidos</h3>
+                <ul>
+                    <l1><a href="proyectos.html">Inicio</a></l1>
+                    <l1><a href="#contacto">Servicios</a></l1>
+                    <l1><a href="#contacto">Contacto</a></l1>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <div>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2026 Tech Mahindra. Todos los derechos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
