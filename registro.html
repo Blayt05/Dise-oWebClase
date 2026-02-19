@@ -17,7 +17,7 @@
 
     <main>
         <div class="form-container">
-            <form class="registro-form" action="#" method="POST">
+            <form id="registroForm" class="registro-form" action="#" method="POST">
                 <h2 class="form-titulo">Crear Cuenta</h2>
                 
                 <div class="form-group">
@@ -83,5 +83,36 @@
             <p>2026 Tech Mahindra. Todos los derechos reservados</p>
         </div>
     </footer>
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Captura datos del forms
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                email: document.getElementById('email').value,
+                usuario: document.getElementById('usuario').value,
+                password: document.getElementById('password').value,
+                confirmPassword: document.getElementById('confirm-password').value,
+                terminos: document.getElementById('terminos').checked,
+                fechaRegistro: new Date().toISOString()
+            }
+
+            // Password coincide 
+            if (formData.password !== formData.confirmPassword) {
+                alert('Las contraseñas no coinciden');
+            }
+
+            // Print en consola
+            console.log('Datos de registro', JSON.stringify(formData, null, 2));
+
+            // Save en localstorage
+            localStorage.setItem('usuario registrado', JSON.stringify(FormData));
+
+            alert('Registro exitoso');
+
+            window.location.href = '/proyectos.html';
+        });
+    </script>
 </body>
 </html>
