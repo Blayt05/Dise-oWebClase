@@ -3,24 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tareas</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="topnav" id="myTopnav">
-                <a href="/proyectos.html">Inicio</a>
-                <a href="/dashboard.html">Dashboard</a>
-                <a class="active" href="/tareas.html">Tareas</a>
-                <a href="/contacto.html">Contacto</a>
-
-            </div>
-        </nav>
-    </header>
-    
+    <div id="header-placeholder"></div>    
     <div class="background-dash"></div>
     <main>
         <section class="tareas-section">
@@ -69,33 +58,10 @@
             </div>
         </section>
     </main>
+    <div id="footer-placeholder"></div>    
+    <script src="components.js"></script>
+    <script src="token.js"></script>
+    <script>checkAuth();</script>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Acerca de</h3>
-                <p>Herramienta creada para la facilitacion en la gestion de tareas en equipos de trabajo en proyectos</p>
-            </div>
-            <div class="footer-section">
-                <h3>Enlaces rapidos</h3>
-                <ul>
-                    <l1><a href="proyectos.html">Inicio</a></l1>
-                    <l1><a href="#contacto">Servicios</a></l1>
-                    <l1><a href="#contacto">Contacto</a></l1>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Redes sociales</h3>
-                <div>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>2026 Tech Mahindra. Todos los derechos reservados</p>
-        </div>
-    </footer>
 </body>
 </html>

@@ -7,14 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="topnav" id="myTopnav">
-                <a href="/index.html">Inicio de Sesion</a>
-            </div>
-        </nav>
-    </header>
-
     <main>
         <div class="form-container">
             <form id="registroForm" class="registro-form" action="#" method="POST">
@@ -52,67 +44,12 @@
 
                 <button type="submit" class="btn-submit">Registrarse</button>
 
-                <p class="form-link">¿Ya tienes cuenta? <a href="/login.html">Inicia sesión</a></p>
+                <p class="form-link">¿Ya tienes cuenta? <a href="/index.html">Inicia sesión</a></p>
             </form>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Acerca de</h3>
-                <p>Herramienta creada para la facilitacion en la gestion de tareas en equipos de trabajo en proyectos</p>
-            </div>
-            <div class="footer-section">
-                <h3>Enlaces rapidos</h3>
-                <ul>
-                    <l1><a href="proyectos.html">Inicio</a></l1>
-                    <l1><a href="#contacto">Servicios</a></l1>
-                    <l1><a href="#contacto">Contacto</a></l1>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Redes sociales</h3>
-                <div>
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>2026 Tech Mahindra. Todos los derechos reservados</p>
-        </div>
-    </footer>
-    <script>
-        document.getElementById('registroForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Captura datos del forms
-            const formData = {
-                nombre: document.getElementById('nombre').value,
-                email: document.getElementById('email').value,
-                usuario: document.getElementById('usuario').value,
-                password: document.getElementById('password').value,
-                confirmPassword: document.getElementById('confirm-password').value,
-                terminos: document.getElementById('terminos').checked,
-                fechaRegistro: new Date().toISOString()
-            }
-
-            // Password coincide 
-            if (formData.password !== formData.confirmPassword) {
-                alert('Las contraseñas no coinciden');
-            }
-
-            // Print en consola
-            console.log('Datos de registro', JSON.stringify(formData, null, 2));
-
-            // Save en localstorage
-            localStorage.setItem('usuario registrado', JSON.stringify(FormData));
-
-            alert('Registro exitoso');
-
-            window.location.href = '/proyectos.html';
-        });
-    </script>
+    
+    <script src="components.js"></script>
+    <script src="registro.js"></script>
 </body>
 </html>

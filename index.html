@@ -15,33 +15,13 @@
     <form id="loginForm" action="proyectos.html" class="container-center">
         <img class="imagen-tam" src="/logo.png">
         <p class="name-company">Tech Mahindra</p> 
-        <input class="button-input" type="text" id="usuario" placeholder="Escribe tu Usuario">
+        <input class="button-input" type="text" id="email" placeholder="Escribe tu Usuario">
             
         <input class="button-input" type="password" id="password" placeholder="Contraseña">
         <p class="registro-style">¿No tienes cuenta? <a class="registro-style" href="registro.html">Registro</a></p>
         <input class="send-button " type="submit" value="Ingresar"> 
     </form>
     
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Captura datos del forms
-            const formData = {
-                nombre: document.getElementById('usuario').value,
-                password: document.getElementById('password').value,
-            }
-
-            // Print en consola
-            console.log('Datos de registro', JSON.stringify(formData, null, 2));
-
-            // Save en localstorage
-            localStorage.setItem('usuario registrado', JSON.stringify(FormData));
-
-            alert('Registro exitoso. Los datos se ven en consola.');
-
-            window.location.href = '/proyectos.html';
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
