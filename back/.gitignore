@@ -1,0 +1,22 @@
+# Ignorar dependencias
+node_modules/
+/vendor
+
+# Ignorar archivos de entorno y secretos
+.env
+.env.local
+*.secret
+
+# Ignorar archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar compilaciones y logs
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Ignorar IDEs
+.vscode/
+.idea/
