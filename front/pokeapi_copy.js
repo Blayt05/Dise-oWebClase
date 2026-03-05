@@ -142,7 +142,7 @@ document.getElementById('btn-limpiar').addEventListener('click', () => {
     mostrarPokemones(todosLosPokemones);
 });
 
-
+// 
 cargarPagina(1);
 
 
