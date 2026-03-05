@@ -20,7 +20,7 @@ registroForm.addEventListener('submit', async (e) => {
 
     if (response.ok) {
         alert("El registro ha sido exitoso")
-        window.location.href = "/dashboard.html";
+        window.location.href = "/front/dashboard.html";
     } else {
         alert("Error", + result.message)
     }

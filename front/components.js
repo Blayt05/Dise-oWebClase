@@ -8,7 +8,7 @@ async function loadComponent(elementid, filePath) {
     }
 }
     document.addEventListener('DOMContentLoaded', function() {
-        loadComponent('header-placeholder', '/header.html');
-        loadComponent('footer-placeholder', '/footer.html');
+        loadComponent('header-placeholder', '/front/header.html');
+        loadComponent('footer-placeholder', '/front/footer.html');
     });
 // 

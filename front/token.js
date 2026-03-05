@@ -20,7 +20,7 @@ function isTokenExpired() {
 function checkAuth() {
     if(isTokenExpired()) {
         localStorage.removeItem('mi_token_seguro');
-        window.location.href = "/index.html";
+        window.location.href = "/front/index.html";
         alert("Tu sesion ha expirado")
     }
 }

@@ -13,14 +13,41 @@
     <main>
         <section class="tareas-section">
             <h2 class="tareas-titulo">Poke API</h2>
-            <div id="contenedor-pokemon"></div>
+
+            <div class="contenedor-buscador">
+                <input class="buscador" type="number" id="filtro-id" placeholder="Buscar por ID">
+                <input class="buscador" type="text" id="filtro-nombre" placeholder="Buscar por nombre">
+                <select class="buscador" id="filtro-tipo">
+                    <option value="">Todos los tipos</option>
+                    <option value="grass">Grass</option>
+                    <option value="fire">Fire</option>
+                    <option value="water">Water</option>
+                    <option value="electric">Electric</option>
+                    <option value="poison">Poison</option>
+                </select>
+                <button id="btn-filtrar">Buscar</button>
+                <button id="btn-limpiar">Limpiar</button>
+            </div>
+            
+            <div class="paginacion-controles">
+                <button id="btn-anterior" class="btn-paginacion">Anterior</button>
+                <span id="info-pagina">Pagina 1</span>
+                <button id="btn-siguiente" class="btn-paginacion">Siguiente</button>
+            </div>
+
+            <div class="tareas-container">
+                <!-- Tarjeta de POKE API -->
+                <div id="contenedor-pokemon-api" class="contenedor-poke"></div>
+            </div>
+
         </section>
     </main>
     
     <div id="footer-placeholder"></div>    
-    <script src="components.js"></script>
+    <script src="/front/"></script>
     <script src="token.js"></script>
     <script>checkAuth();</script>
     <script src="pokeapi_copy.js"></script>
+    <script src="components.js"></script>
 </body>
 </html>

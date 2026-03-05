@@ -19,7 +19,7 @@ loginForm.addEventListener('submit', async (e) => {
     if(response.ok) {
         localStorage.setItem('mi_token_seguro',result.token);
         alert("Login exitoso");
-        window.location.href = '/dashboard.html';
+        window.location.href = '/front/dashboard.html';
     } else {
         alert("Error: " + result.message);
     }

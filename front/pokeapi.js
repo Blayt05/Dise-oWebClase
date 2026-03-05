@@ -17,4 +17,4 @@ fetch(pokeapi)
 
     })
     .catch(error => console.error("Error al consumir la API:", error));
-    
+  
