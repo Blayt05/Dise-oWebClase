@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Pokémon</title>
+    <link rel="stylesheet" href="/front/styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Pantalla de Selección -->
+    <div id="selection-screen" class="screen active">
+        <div class="selection-container">
+            <h1 class="battle-title">⚔️ Batalla Pokémon ⚔️</h1>
+            <p class="subtitle">Elige dos Pokémon para la batalla</p>
+            
+            <div class="selection-inputs">
+                <div class="input-group">
+                    <label for="poke1-input">Pokémon 1:</label>
+                    <input type="text" id="poke1-input" list="pokemon-list" placeholder="Ej: pikachu">
+                </div>
+                
+                <div class="vs-divider">
+                    <span>VS</span>
+                </div>
+                
+                <div class="input-group">
+                    <label for="poke2-input">Pokémon 2:</label>
+                    <input type="text" id="poke2-input" list="pokemon-list" placeholder="Ej: charizard">
+                </div>
+            </div>
+            
+            <button class="start-battle-btn" onclick="iniciarBatalla()">
+                ¡Comenzar Batalla!
+            </button>
+            
+            <p id="error-msg" class="error-message"></p>
+        </div>
+    </div>
+
+    <datalist id="pokemon-list"></datalist>
+
+    <!-- Pantalla de Batalla -->
+    <div id="battle-screen" class="screen">
+        <h2 class="battle-header">⚔️ ¡Batalla en Curso! ⚔️</h2>
+        
+        <div class="battle-arena">
+            <!-- Pokémon 1 -->
+            <div class="pokemon-card" id="card-p1">
+                <h3 id="p1-name" class="pokemon-name">Pokémon 1</h3>
+                <img id="p1-img" src="" alt="Pokémon 1" class="pokemon-sprite">
+                <div class="hp-container">
+                    <p class="hp-label">Vida:</p>
+                    <div class="hp-bar-bg">
+                        <div id="p1-hp-bar" class="hp-bar"></div>
+                    </div>
+                    <p class="hp-text"><span id="p1-hp-text">100</span>%</p>
+                </div>
+            </div>
+
+            <!-- Narrador Central -->
+            <div id="narrator-box">
+                <div id="narrator-content">
+                    <p id="narrator-text">¡Preparando el combate!</p>
+                </div>
+            </div>
+
+            <!-- Pokémon 2 -->
+            <div class="pokemon-card" id="card-p2">
+                <h3 id="p2-name" class="pokemon-name">Pokémon 2</h3>
+                <img id="p2-img" src="" alt="Pokémon 2" class="pokemon-sprite">
+                <div class="hp-container">
+                    <p class="hp-label">Vida:</p>
+                    <div class="hp-bar-bg">
+                        <div id="p2-hp-bar" class="hp-bar"></div>
+                    </div>
+                    <p class="hp-text"><span id="p2-hp-text">100</span>%</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historial de Batalla -->
+        <div id="battle-log-container">
+            <h3>📋 Historial de la Batalla</h3>
+            <div id="battle-log">
+                <ul id="log-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de Ganador -->
+    <div id="winner-screen" class="screen">
+        <div class="winner-container">
+            <h1 class="winner-title">🏆 ¡GANADOR! 🏆</h1>
+            <h2 id="winner-name" class="winner-pokemon-name">---</h2>
+            <img id="winner-img" src="" alt="Ganador" class="winner-image">
+            <button class="replay-btn" onclick="location.reload()">
+                🔄 Nueva Batalla
+            </button>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="/front/components.js"></script>
+    <script src="/front/token.js"></script>
+    <script src="pokelucha.js"></script>
+    <script>checkAuth();</script>
+</body>
+</html>

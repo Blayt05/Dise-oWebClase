@@ -65,7 +65,7 @@ function crearTarjetaPokemon(data){
                         <span id="peso-pokemon" class="tarea-prioridad-poke baja">${data.weight / 10}</span>
                     </div>
                 </div>
-        `;
+        `;1     
 }
 
 function mostrarPokemones(pokemones) {
@@ -142,7 +142,7 @@ document.getElementById('btn-limpiar').addEventListener('click', () => {
     mostrarPokemones(todosLosPokemones);
 });
 
-// 
+
 cargarPagina(1);
 
 
